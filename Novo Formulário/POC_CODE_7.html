@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>POC_CODE_7</title>
+    </head>
+
+    <style>          
+         *{margin:3;padding:0;box-sizing:border-box;}
+         body{ 
+            background-color:#F5F5F5;
+        }
+
+        <form{
+            background-color:#FFFAFA;
+            max-width:500px;
+            width:70%;
+            padding:20px;
+
+        }
+        form{
+           text-decoration-style: double;
+           color: #191970;
+           font-family:bahnschrift;
+           margin: 5;
+           
+        }
+        form input[type=text],
+             input[type=tel],
+             input[type=email]{
+             width: 35%;
+             height: 25px;
+             border: 0.3px solid 	#191970;
+             padding-left: 10px;
+             border-color:#000000;
+             margin: 5;
+        }
+
+        form input[type=submit]{
+             width: 15%;
+             height: 35px;
+             cursor: pointer;
+             background: 	#000080;
+             color: #FFFFF0;
+             border: 20px;
+        }
+        
+        form input[type=submit]:hover{
+             background-color: #0000CD;
+             
+        }        
+
+                
+
+    </style>
+    
+    <body>
+        <form>
+            <p> <br> </p>
+            <div>
+            <Label style="display: inline-block;"><p><h2>CADASTRO DE CLIENTES - CODE 7</h2></p></Label>                    
+            <button style="position: absolute; right: 55;color: #808080;width: 10%;height: 5%;background-color:#FFFAFA;border-color:#DCDCDC;">Pesquisar Cliente</button>
+            </div>
+            <br>
+            <div>
+            <h3>Nome do Cliente*</h3>
+            <input type="text" id="cNome" cNome='Nome Completo' placeholder='Digite seu Nome completo ou sua Razao Social' style="width: 96.5%;"/>           
+            <br>
+            </div>       
+            <div>            
+            <label for="tipoPessoal" style="display: inline-block;"><h3>Tipo de Pessoa*</h3></label>
+            <label for="nome" style="position: absolute; right: 680;" ><h3>CPF/CNPJ do Cliente*</h3></label>
+            <div>
+            <label for="Fisica">Fisica</label>
+            <input type="checkbox" tPF="Fisica" tPFNome="Fisica"/>
+            <label for="Juridica">Juridica</label>
+            <input type="checkbox" tPJ="Juridica" tPJNome="Juridica"/>
+            <input type="text" id="cCPF_CNPJ" cCPF_CNPJ='CPF/CNPJ' placeholder='Seu CPF ou CNPJ....' style="position: absolute; right: 48;width: 59.5%;"/>
+            </div>         
+            </div>
+            <br>
+            <div> 
+            <label for="Telefone" style="display: inline-block;"><h3>Telefone</h3></label>
+            <label for="Email" style="position: absolute; right: 790;" </label>
+            <label for="Email" style="display: inline-block;"><h3>E-mail*</h3></label>                      
+            </div>
+            <div>
+            <input type="tel" cTelefone='Telefone' placeholder="(00) 9-9999-9999"/>          
+            <input type="email" id="cEmail" cEmail='Email' style="width: 60.5%;" placeholder='Digite seu e-mail: exemplo@exemplo.com.br...'/>
+            </div>            
+            <div>
+            <label for="Lagradouro" style="display: inline-block;" ><h3>Logradouro</h3></label>
+            <label for="Numero" style="position: absolute; right: 788;" </label>
+            <label for="Numero" style="display: inline-block;"><h3>Numero</h3></label>
+            <label for="Complemento" style="position: absolute; left:415;" </label>
+            <label for="Complemento" style="display: inline-block;"><h3>Complemento</h3></label>
+            </div>
+            <div>
+            <input type="text" cLogradouro='CPF/CNPJ'/>
+            <input type="text" cNumero='Numero' style="width: 30.25%;"/>
+            <input type="text" cComplemento='Complemento' style="width:29.25%"/>
+            </div>
+            <div>
+                <label for="CEP" style="display: inline-block;" ><h3>CEP</h3></label>
+                <label for="Estado" style="position: absolute; right: 796;" </label>
+                <label for="Estado" style="display: inline-block;"><h3>Estado</h3></label>
+                <label for="Cidade" style="position: absolute; left:415;" </label>
+                <label for="Cidade" style="display: inline-block;"><h3>Cidade</h3></label>
+                </div>
+                <div>
+                <input type="text" cCep='CEP'/>
+                <input type="text" cEstado='Estado' style="width: 30.25%;" placeholder='Selecione o estado...'/>
+                <input type="text" cCidade='Cidade' style="width:29.25%" placeholder='Selecione a cidade...'/>
+                </div>
+                <br>                     
+                <input type="submit" onclick="salvar1()" nome="Salvar" value="Salvar" />
+                <br><br>                
+                <p id="mensagem"></p>                              
+                <script>
+                    
+                function salvar1(){
+                         var nome_1= document.getElementById('cNome').value;
+                         var cpfcnpj_1=document.getElementById('cCPF_CNPJ').value;
+                         var email_1=document.getElementById('cEmail').value;
+                         try{
+                            if(nome_1== '')throw 'O campo Nome deve ser preenchido!';
+                            if(nome_1.indexOf(" ")==-1)throw 'Preencha o nome completo!';
+                            if(cpfcnpj_1== '')throw 'O campo CPF/CPNJ deve ser preenchido!';
+                            if(cpfcnpj_1.length >=14)throw 'Preencha o campo CPF/CPNJ corretamente!';
+                            if(email_1== '')throw 'O campo E-mail deve ser preenchido!';
+                            document.getElementById('mensagem').innerHTML= alert('Cadastro realizado com sucesso!');
+                            }catch(erro){
+                            document.getElementById('mensagem').innerHTML= alert('Erro:' +erro);   
+                            } 
+                        }
+ 
+                         
+                         
+
+
+                        
+
+
+
+
+
+
+            </script>        
+        </form>
+    </body>
+</html>
