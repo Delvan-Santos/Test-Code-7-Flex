@@ -1,0 +1,159 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="POC_CODE_7" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="654,2121" sap2010:WorkflowViewState.IdRef="POC_CODE_7_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="33">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="29">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="POC_CODE_7" sap:VirtualizedContainerService.HintSize="552,2056" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="Essa activi tem por finalidade abri o site do Correios." BrowserType="Chrome" DisplayName="Abre o site do Correios" sap:VirtualizedContainerService.HintSize="510,1964" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.correios.com.br/">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,1832" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="tabela_Excel" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Correios — Correios, o maior operador logístico do Brasil." sap:VirtualizedContainerService.HintSize="434,1678" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="199a5f7c-4eab-41f5-b65d-b1650e52b3fa" Version="V1">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="376,1462" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'Meu Correios'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="199a5f7c-4eab-41f5-b65d-b1650e52b3fa" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.correios.com.br/" DesignTimeRectangle="1147, 123, 102, 30" ElementType="Text" FriendlyName="'Meu Correios'" FullSelectorArgument="&lt;webctrl parentid='menu-content' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='menu-content' tag='SPAN' type='' aaname='Meu Correios' check:text='Meu Correios' /&gt;" Guid="14eb57b1-3462-425a-b12a-54a3a084a53e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGoAAAAiCAYAAAC3KkyWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUQSURBVGhD7ZjNS1tNFMbzX7h06bI7ty6zy9Klyy4FkVBECEVseRGFQgkikkWRIEVt3mgIIVXfiglB0lC1FwklfrS9RWKaRAmun/fMnZk493qTm6ZYe2EWv0XOfJ07zzlnZhJo3V5D8/ejhfIJWiifoIXyCVoon6CF8glaKJ+ghfIJWiifoIXyCVoon9CbUKVtDCwWUXPamyWEw9vIOe0PTfUE8Vgaw+ENBCYkCbz41HDv/6ep5BGa3MD43nf39j7oSahKeguBySxSTUdbkQSc2ELszGF/SM4KGLMJRIQTCFEgVdz6PwYXBYw+hlA7Mb4h4fyVYm+07eP7qv0BaRl4Mc3XHHt7jErzL8mgP0APQp0iNss3Z2CppJQ/2rQpbn8SN5T+BJWm2GISQxRVrH1oJoOFwtd2OxeYMvFCGXN7iAj1DcQOFZudWj5LGbyB4FrZtd1G9RjRV6oPWcQ+/7hrp2rA7KHUKYydLIIsSyfTWDfPEXvJxmxjp25g4Z+EteaQ/Mabc6RW7sru4HQakfcn7X2RwcuIFMVaDC9/qH1hPoFBNnYygZH5baSU/fEWqlnEOA0enk7Yy9/RLp5MJBGcoYlfHcCU/eu04SLqnYTzl1affoXKvWHj0ohfure36ehDApGSyH4h1MjcFoZl+8w+jFsp1BZG5+Q4UU1aFLSKTSX0jgePq1Ce/nzH+mtnm31/vIUq72OEHdRFLpgsf8ZaEoHn+0hZ55e8UFwhtUSLzFA0VLgorETWTANR9oFTu1a//oQSG0hrGq7td+TiFFQ01+iaAfOG2X7CLO4iyOZ/mednmRAqMJmkb2NnSQNmlfkshaLgfF2AwcrrzQ+YFKDGO/rmqTRiR19Ra4n16l+wvsTWo2ysCpuYWwrl7Y/8tg/IdSjnnkKZO2nhBImwKMvfF0Qpk0ZYCbIyS14ojhERqe3OFuLfflOo2byHUJ0EpTN1ma2b4VVBZtTbE6UPQwqVwXrdbo93yCZJpCT62oTqzR/zvwwGKWgie2Uhph1PoaxyIzLBOiNY+SvT9ZPKXrRMfaoHeEpOWReKC2a/c/w+vyOUY6Nd+zDEPDJzFIxNyn65rtjMUOrc1udOKDqjbHYxbxfcherRH5bRnwuIiDMxtHIIU2Yt4SGUiCL5hmLvJsqY0CwvezxCyog+FxeK1iHCzKnlzucMw1UoObbLGcWzm9bfPHVt53SKYF4RAhNZ7LAN+GWhxKXKM6OJnjLK4Y/aRu8wdr0fVi5pHkLxaLBKnPVbnEE2m4j0uQJFjDwUEwi/lylMZ9QZ3WjesHY+L48kqtmbZV7rm6dYX05akdRNqFaT/BE3zW7X83tnQusKlb0svzTMF/jF55eFusbHVTHvqrL2ZRnx5Q/2zbYJ1aM/KlVKCPadShZ2F+qMl7JwQdkQcmJAlj1h4xsvIoPGsGhgjtlRMojOtfZNy0k3oYgarT/inJ8evGNqqbikcuzqA12KjsS39CFUtxttpGjfI24Tvz39aSC3wsVUUZ9DXYWq7WdoAG2w+s8DlaiIdY1VbJZjinjmIRaUN4P11kgdKzW3wd8uz3g7e2dFSweepa/Nt5JtfskwjW2/84QP1ruEsN4tJ/ImSvQjFKNu//tq4FkST1eLMNSLh1MoRld/rpD7N4OQDAJ6RwUX8/iozOl5mbgPlbLmTxe75iHpQyjNY6CF8glaKJ+ghfIJWiifoIXyCVoon6CF8glaKJ+ghfIF1/gfq2yAeGezhycAAAAASUVORK5CYII=" InformativeScreenshot="52713d7726c3df52b18d31bc7aec41ec.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Correios — Correios, o maior operador logístico do Brasil.' /&gt;" SearchSteps="Selector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'Cadastrar'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="199a5f7c-4eab-41f5-b65d-b1650e52b3fa" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://cas.correios.com.br/login?service=https%3A%2F%2Fmeucorreios.correios.com.br%2Fcore%2Fseguranca%2Fservice.php" DesignTimeRectangle="657, 500, 69, 19" ElementType="Text" FriendlyName="'Cadastrar'" FullSelectorArgument="&lt;webctrl aaname='Cadastrar' parentid='fm1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Cadastrar' parentid='fm1' tag='A' type='' check:text='Cadastrar' /&gt;" Guid="8a171316-9fa7-4cf6-b3c6-560c1808d6fa" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEkAAAAXCAYAAABH92JbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHvSURBVFhH7ZYxjgIxDEU5IzfZM+xIXIOGkpKCbegoKGk4AoJLZOP4O3E8CZNhl5UW5UsWiieJ7RdnhoXrmlSH1KAOqUEdUoM6pAb9DaTbyS0/tm44Y/zPVIR0XG/dwhcVbHVyV/if1ltBQjHL/R0Or/Ph56B+FdLFDTbHF0tBemHwd4F03e/89Tq4I8ZVoeB4HYtr7m6zUnNWuxGk7Ep7y4s2673xWgak/anLBd5JzUFudBuiT69hSe2b8MtzdD6AhKQmrxXN27nNDcPiOhSifUgyQqLx+oKBl3n++MBqnZQA5h1Lfr0X5qn4HK9e/0xIBYUCE7higZPXDfGROO+hD0NrApKGX5HN8XG8pyBhLiUUTQLkxUaVINkrQBbXpRg1GO1+EgBmZiHVOle9k/gdUZ/IQrDRVZoHiZPS0CrrYnH6lGdCkneo2rvcSQ2Q5GTLJwGZq0ViuMkXxrYjM0gFIIVCkjA/7jkP0hiAdOkzkLzki5MFCgVgA9MRBG259mZ8oZ11wfDJnBwkJX1wQwlukIVkx6IKPHOwBGTwOVtfM6QgKVIZfVaPKJA3xDOAGHWPdIbY6C8AF8TPkaw6gCxGMFOA2Z/3rXVYOnwyfg7QyH8+pK6RAqTPr0sk3Y2NmIh6JzWoQ2pQh9SgDmlSzn0D6Ywa2dHbHoIAAAAASUVORK5CYII=" InformativeScreenshot="a4c48d0dc24e6ac65f6fbc66a394f00b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login - CAS – Central Authentication Service' /&gt;" SearchSteps="FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'Pessoa Jurídica'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="199a5f7c-4eab-41f5-b65d-b1650e52b3fa" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://meucorreios.correios.com.br/app/fazer-cadastro.php" DesignTimeRectangle="512, 311, 300, 34" ElementType="Text" FriendlyName="'Pessoa Jurídica'" FullSelectorArgument="&lt;webctrl aaname='                                                  Pessoa Jurídic*' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                                  Pessoa Jurídic*' tag='LABEL' type='' check:text='Pessoa Jurídica' /&gt;" Guid="c08a8170-ceeb-415f-9f42-87d85d9a0758" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATAAAAAmCAYAAABDA8fBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOSSURBVHhe7ZtNbvIwEEC/U3eJxAG6KUeoqqiL3gG2PQDcga56An+Z2E7tiU1Ca34GvSdF4PgnjtG8Tgz95wAAjILAAMAsCAwAzILAAMAsCAwAzILAAMAsCAwAzILAAMAsCAwAzILAAMAsCAwAzILAHoaj272s3Op9H8oAj09zgR0OB/f6+urW67V7enoaXqUs5+GC7Du3WnWuqq+hfuN2X6EM8AA0FdjHx4d7fn52n5+f7vv7ezgnr1KW81K/mCHg+owiO04EqCW+dm7T389mewwn/orPvk6OpwUW1rcjYQPDNBOYyOnt7S2Uykj9YokVAmz/7kVmPuiaC2wBWmBhDggMLNNEYPJ4KBnWEqTdosfJYoawd11/zvw+zz0IDOABaCIw2eOSx8QlSDtpP0tRYGGj+mXXvxOC0MZDBWgYYzzGfmGcpC67ju6nhVkddyFaYMVsSG3KRwFtk2v3dcftJpS1nPK12bxIu9Ammb/OwGKWO/ZLJHuqDuAWNBGYbNTHPa85pJ20nyUEWTUDK2QxMZh9H9+2FGS+XXk/LR9DCNfMpJn2Tea0lF8LTMQxnbefcyKwMF46p0mbyfpGqet7S6SX3mPx8wG4Lk0EJt82nsOi9oUA8RmAD6jh/UQaadDXxTIJ5pFKn2EupfaeU0Is8geBlYSh72dYG50V6nvQ483c4xQ1P4AbcPcZWH5ESQTR1A4V9FO5xGxDZWhFkfRMzpeufw2BlQWTC8zPbZJ56v5hbeI1/R+HmXsofSYIDG6IsT2wSD27KuEDvNQ+iigE9hKBhffpWL/NwMbr3IvATuzlxTX8mSMZGNyeJgK73reQkRA852yeV8dLx6qIMQn+qaxC/7sRWEUsur9aj3wMTWHMgsgBrk0TgQnX+B1YRimA5FwtoKrjpQIrBbKSmhKBtO/elRwUWnq6PLlGj29Tv26KnnPsm2Zhus10PWI2quXsy3mG5s93M1kbwKVpJjBB5CQZljwmxj0xeZWynF8sL2FOYEKUWHJ0fdD6gIoB+XPEgB7lMB559jSpV1L0+0X+8GNWsp6RUD+OWRCRupfNdp+PeYbABsL6jeOlP6NI6vP11fP08zgOfdL1DOOEOZ/8jAAuSFOBCfJ4KHtcslHP/0ICwCVpLjAAgGuBwADALAgMAMyCwADALAgMAMyCwADALAgMAMyCwADALAgMAMyCwADALAgMAMyCwADALAgMAIzi3H8IapPilSqC1wAAAABJRU5ErkJggg==" InformativeScreenshot="361177cf1c79b6a206d0d96a1f1c5fd4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Meu Correios' /&gt;" SearchSteps="FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'Prosseguir'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="199a5f7c-4eab-41f5-b65d-b1650e52b3fa" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://meucorreios.correios.com.br/app/fazer-cadastro.php" DesignTimeRectangle="763, 613, 96, 36" ElementType="Text" FriendlyName="'Prosseguir'" FullSelectorArgument="&lt;webctrl tag='A' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' type='button' aaname='Prosseguir' check:text='Prosseguir' /&gt;" Guid="c09a801f-0789-491d-a592-fe4dca34e155" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGQAAAAoCAYAAAAIeF9DAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIoSURBVGhD7ZtNbsIwEEZ7ju57wq7aXS/DrgvukBVHIBcoS1hEQki4HtufGY+N+gNJBpgnfVJJ7DieZ4cKKU/OUIUJUUYh5O1z517eN+759csyQajWVHNOFkInWp0s44dLyUJsZ8wXqj3IQloNLdMFmBAlASZESYAJURJgQpQEmBAlASZESYAJURJgQpQEXFnI4NbpepnN0Gh3S0lzGnkeYBwhuPnl3m3555vMPQnxWYSfaQ5uUbSzyIDRhXz0R3/g6LrlSU4XjsW/gyjsJFD1B/E6eRxQLQCA9pSd64Z0GAx795HG3vb4tRvt6N5YnzTG2TlcGDDpDkGx4uT9ZHtqJ/rwAoliLXpfQHFNatOt6rHaY5/6hAXwoxD6XN5few5xvEsCJv0OiZPhq7bcQfFYKggrluyDonDxUl7I6hCarVfsmuFcPcbfhJT3c42AcYRwWNGKVZpSCxHtUlEj6IuiRUIxs7waOl8Uki+Ufwkp53CNgNEfWTy/EyJXM28ndkBeAP6arR1SRCwWXN+EyMmIPkWBfHE2jcL5XbOuvjdkIaNEFLq1E2PkPUPcwwrxScXOVMVJpFWN3QIgRz7K+C6TfQIYp3gsgrsQojheOv4bo5zfMfMEPIwQubLjZxMyY8TjTJEMCnggIboDTIiSABOiJMCEKAkwIUoCTIiSABOiJMCEKAnIQux1hPnSfB3BXtiZL80Xdgg6YTtlulCtuQyiEGLMjwlRhXPfTIU7r/EmMJkAAAAASUVORK5CYII=" InformativeScreenshot="c72b114b1f3f59b0bc7691788d0ca45c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Meu Correios' /&gt;" SearchSteps="FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Extrai_Dados_Excel workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Extrai_Dados_Excel.xaml">
+                      <ui:InvokeWorkflowFile.Arguments>
+                        <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_Excel">[tabela_Excel]</OutArgument>
+                      </ui:InvokeWorkflowFile.Arguments>
+                    </ui:InvokeWorkflowFile>
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Inputar_Dados_Excel workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Inputar_Dados_Excel.xaml">
+                      <ui:InvokeWorkflowFile.Arguments>
+                        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_Excel">[tabela_Excel]</InArgument>
+                      </ui:InvokeWorkflowFile.Arguments>
+                    </ui:InvokeWorkflowFile>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'A https://meucorreios.c…'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="199a5f7c-4eab-41f5-b65d-b1650e52b3fa" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://meucorreios.correios.com.br/app/cadastro/pj/cadastro.php" DesignTimeRectangle="68, 89, 1177, 28" FriendlyName="'A https://meucorreios.c…'" FullSelectorArgument="&lt;webctrl href='https://meucorreios.correios.com.br/app/index.php' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl href='https://meucorreios.correios.com.br/app/index.php' tag='A' type='' aaname='' /&gt;" Guid="104a31a2-bcc2-401d-a332-d6b99f86d2a4" ImageBase64="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" InformativeScreenshot="a78aaa125b55c81e2d859f396dcb2998.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Meu Correios' /&gt;" SearchSteps="FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,84" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;MASSA DE CADASTRO REALIZADA COM SUCESSO !&quot;]" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACzSURBVDhPpZLRDYMwDEQzKrt0IDaAETpCR+gI1E/OgbmmQiofD8WXO9tq09pjcaZgDTYDjbuz34Rn4CFvhufIlOIdYHgF35NS4w4P3tT7QZPnXoOmq676sUl86KzJboJRE20yVXNd+6qBhq4UMrqJYA17nbl+GE2pcK9B8qZm4i8uG0ANyFAbe525LlL8/SPe/htBD6maOY/Car4/JHHrKQttIrRF1XKyOBUJkzwEaLbZ0j4/VLTEFQgreAAAAABJRU5ErkJggg==" InformativeScreenshot="044df95d37164b4db547443b6e6a181d.png" Selector="&lt;html app='chrome.exe' title='Correios — Correios, o maior operador logístico do Brasil.'/&gt;" Url="https://www.correios.com.br/" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:OpenBrowser>
+  </Sequence>
+</Activity>
